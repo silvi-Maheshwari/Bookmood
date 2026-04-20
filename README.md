@@ -119,7 +119,7 @@ Frontend Developer | React | JavaScript
 
 ## 🌐 Live Demo
 
-(👉 Add your deployed link here)
+(https://visionary-bavarois-edbbd3.netlify.app/)
 
 ---
 
