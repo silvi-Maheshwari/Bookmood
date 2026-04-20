@@ -1,16 +1,130 @@
-# React + Vite
+# 📚 BookMood – Find Books Based on Your Mood
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🌟 Overview
 
-Currently, two official plugins are available:
+BookMood is a modern web application that helps users discover books based on their current mood. Instead of searching by title or author, users can explore curated book suggestions based on how they feel.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This project is built using the Open Library API and focuses on delivering a clean, interactive, and user-friendly experience.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🎯 Problem Statement
 
-## Expanding the ESLint configuration
+Many users struggle to decide what to read next. Traditional search-based systems require users to already know what they are looking for.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+BookMood solves this by enabling **mood-based discovery**, making the process more intuitive and enjoyable.
+
+---
+
+## 💡 Features
+
+* 🎭 Mood-based book discovery (Love, Fantasy, Horror, Motivation)
+* 🔍 Search functionality for books
+* ❤️ Add books to Wishlist
+* 📱 Fully responsive design (mobile + desktop)
+* ⏳ Loading states for better UX
+* ❌ Error handling for failed API requests
+* 😕 Empty state when no results found
+* ⚡ Smooth UI interactions and hover effects
+
+---
+
+## 🛠️ Tech Stack
+
+* React.js (Vite)
+* JavaScript (ES6+)
+* CSS (Custom styling)
+* Axios (API requests)
+* Open Library API
+
+---
+
+## 🔗 API Used
+
+* https://openlibrary.org/search.json
+* https://openlibrary.org/subjects/{subject}.json
+* https://covers.openlibrary.org/b/id/{cover_id}-M.jpg
+
+---
+
+## 📂 Project Structure
+
+```
+src/
+ ├── components/
+ │     ├── Navbar.jsx
+ │     ├── BookCard.jsx
+ │     ├── Loader.jsx
+ │     ├── Error.jsx
+ │     └── EmptyState.jsx
+ │
+ ├── pages/
+ │     ├── Home.jsx
+ │     ├── Discover.jsx
+ │     ├── Wishlist.jsx
+ │     └── BookDetails.jsx
+ │
+ ├── services/
+ │     └── api.js
+ │
+ ├── context/
+ │     └── AppContext.jsx
+```
+
+---
+
+## 🚀 How It Works
+
+1. User selects a mood from the homepage
+2. Application fetches relevant books using Open Library API
+3. Books are displayed in a clean card layout
+4. Users can save books to their wishlist
+5. Wishlist is stored using LocalStorage
+
+---
+
+## 📱 Responsive Design
+
+The application is fully responsive and works seamlessly across:
+
+* Mobile devices
+* Tablets
+* Desktop screens
+
+---
+
+## ⚠️ Edge Cases Handled
+
+* Slow network → Loading spinner shown
+* API failure → Error message with retry option
+* No results → Empty state message displayed
+
+---
+
+## 🔥 Future Improvements
+
+* Dark mode 🌙
+* Infinite scroll
+* User authentication
+* Personalized recommendations
+
+---
+
+## 👩‍💻 Author
+
+Silvi Maheshwari
+Frontend Developer | React | JavaScript
+
+---
+
+## 🌐 Live Demo
+
+(👉 Add your deployed link here)
+
+---
+
+## 📌 GitHub Repo
+
+(👉 Add your repository link here)
+
+---
