@@ -56,19 +56,21 @@ src/
  │     ├── BookCard.jsx
  │     ├── Loader.jsx
  │     ├── Error.jsx
- │     └── EmptyState.jsx
+ │   
  │
  ├── pages/
  │     ├── Home.jsx
- │     ├── Discover.jsx
+ │     ├── Book.jsx
  │     ├── Wishlist.jsx
- │     └── BookDetails.jsx
+ │     └── Details.jsx
  │
  ├── services/
  │     └── api.js
  │
  ├── context/
- │     └── AppContext.jsx
+ │     └── whislistcontext.jsx
+        └── Themecontext.jsx
+        
 ```
 
 ---
